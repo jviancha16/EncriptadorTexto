@@ -1,0 +1,90 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #052051;
+    color: #ffffff;
+}
+
+/* División de la página en dos partes */
+.container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilización del campo de texto */
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #356EA9;
+    border-radius: 5px;
+    background-color: #072B61;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+/* Estilización de los botones */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #0A3871;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Animación del cursor y botones */
+button:hover {
+    background-color: #609ED4;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #356EA9;
+}
+
+button#copyBtn {
+    margin-top: 20px;
+    background-color: #356EA9;
+}
+
+/* Estilización del mensaje de error */
+.error {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+/* Estilización del área de presentación de texto */
+#output {
+    background-color: #072B61;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #356EA9;
+}
+
+/* Imagen de fondo en el campo de presentación */
+#outputText {
+    background-image: url('ruta/de/tu/imagen.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+}
